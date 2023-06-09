@@ -1,4 +1,5 @@
 alias cls="clear"
+alias vim="nvim"
 alias buildnvim='git pull && sudo make CMAKE_BUILD_TYPE="RelWithDebInfo" && sudo make install'
 locatestringfromfiles ()
 {
