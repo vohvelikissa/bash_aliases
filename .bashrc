@@ -19,7 +19,7 @@ git69() {
 	git commit -m "$1"
 	git push
 }
-alias ls='ls --color=auto'
+alias ls='eza'
 alias cc2='cc -Wall -Wextra -Werror *c && ./a.out'
 alias grep='grep --color=auto'
 alias cls='clear'
