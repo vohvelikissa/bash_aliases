@@ -2,10 +2,27 @@
 # ~/.bashrc
 #
 
+preferred_name="Hilda"
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
 # alias norminette='cd ~/projects/norminette && poetry run norminette '
+codeheader() {
+echo "/* ************************************************************************** */"
+echo "                "
+echo "// date: $(date)"
+echo "// name: $preferred_name"
+echo "// file: $preferred_filename"
+echo "                "
+echo "/* ************************************************************************** */"
+}
+
+codeheadertofile() {
+preferred_filename=$1
+codeheader > $1 && vim $1
+}
+
 norminette() {
 	cd ~/projects/norminette
 	poetry run norminette $1
@@ -20,8 +37,8 @@ git69() {
 	git push
 }
 alias ls='eza'
-alias cc2='cc -Wall -Wextra -Werror -Wpedantic *c -o '
-alias cc3='cc -Wall -Wextra -Werror -Wpedantic $(pkg-config --cflags --libs sdl2) *c -o '
+alias cc2='gcc -Wall -Wextra -Werror -Wpedantic *c -o '
+alias cc3='gcc -Wall -Wextra -Werror -Wpedantic $(pkg-config --cflags --libs sdl2) *c -o '
 alias grep='grep --color=auto'
 alias cls='clear'
 alias bat='bat --color never'
