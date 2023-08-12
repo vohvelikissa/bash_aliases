@@ -9,13 +9,13 @@ preferred_name="Hilda"
 
 # alias norminette='cd ~/projects/norminette && poetry run norminette '
 codeheader() {
-echo "/* ************************************************************************** */"
+echo "/* ************************************************************************** **"
 echo "                "
 echo "// date: $(date)"
 echo "// name: $preferred_name"
 echo "// file: $preferred_filename"
 echo "                "
-echo "/* ************************************************************************** */"
+echo "** ************************************************************************** */"
 }
 
 codeheadertofile() {
