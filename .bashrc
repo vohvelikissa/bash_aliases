@@ -7,7 +7,6 @@ preferred_name="Hilda"
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# alias norminette='cd ~/projects/norminette && poetry run norminette '
 codeheader() {
 echo "/* ************************************************************************** **"
 echo "                "
@@ -23,11 +22,6 @@ preferred_filename=$1
 codeheader > $1 && vim $1
 }
 
-norminette() {
-	cd ~/projects/norminette
-	poetry run norminette $1
-	cd
-}
 gotodefinition() {
 	grep "$1" $(find /usr/include/)
 }
