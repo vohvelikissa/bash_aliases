@@ -31,11 +31,7 @@ norminette() {
 gotodefinition() {
 	grep "$1" $(find /usr/include/)
 }
-git69() {
-	git add *
-	git commit -m "$1"
-	git push
-}
+
 alias ls='eza'
 alias cc2='gcc -Wall -Wextra -Werror -Wpedantic *c -o '
 alias cc3='gcc -Wall -Wextra -Werror -Wpedantic $(pkg-config --cflags --libs sdl2) *c -o '
@@ -52,7 +48,7 @@ alias aaltonews='wget -q aalto.fi/en/news/feed && grep "<link>" feed && rm feed'
 alias aalto='aaltomagazine && aaltonews'
 alias harvardbr='echo Enjoy some Harvard Business Review, my good $preferred_gender_word && wget -q feeds.hbr.org/harvardbusiness && cat harvardbusiness | tr ">" "\n" | grep "<link" | tr "=" "\n" | grep "https" | tr " " "\n" | grep "https" && rm harvardbusiness*'
 
-is_it_pride=false
+is_it_pride=true
 preferred_gender_word="other"
 
 if [ "$is_it_pride" = true ] ; then
