@@ -30,6 +30,12 @@ findSDL2shit() {
 	grep "$1" $(find /usr/include/SDL2/)
 }
 
+buildneovim() {
+	make CMAKE_BUILD_TYPE=RelWithDebInfo
+	sudo make install
+}
+
+alias vim='nvim'
 alias ls='eza'
 alias cc2='gcc -Wall -Wextra -Werror -Wpedantic *c -o '
 alias cc3='gcc -Wall -Wextra -Werror -Wpedantic $(pkg-config --cflags --libs sdl2) *c -o '
