@@ -51,6 +51,7 @@ alias aaltomagazine='wget -q aalto.fi/en/listing/140801/feed && grep "<link>" fe
 alias aaltonews='wget -q aalto.fi/en/news/feed && grep "<link>" feed && rm feed'
 alias aalto='aaltomagazine && aaltonews'
 alias harvardbr='echo Enjoy some Harvard Business Review, my good $preferred_gender_word && wget -q feeds.hbr.org/harvardbusiness && cat harvardbusiness | tr ">" "\n" | grep "<link" | tr "=" "\n" | grep "https" | tr " " "\n" | grep "https" && rm harvardbusiness*'
+alias transgender='prideful trans'
 
 is_it_pride=true
 preferred_gender_word="other"
