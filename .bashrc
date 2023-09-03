@@ -35,6 +35,7 @@ buildneovim() {
 	sudo make install
 }
 
+alias installgit69='cc2 git69 && sudo rm /usr/local/bin/git69 && sudo mv git69 /usr/local/bin/'
 alias vim='nvim'
 alias ls='eza'
 alias cc2='gcc -Wall -Wextra -Werror -Wpedantic *c -o '
