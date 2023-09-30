@@ -35,6 +35,14 @@ buildneovim() {
 	sudo make install
 }
 
+specigitupdate() {
+	rm $1/$2
+	cp $2 $1
+	cd $1
+	git69 updated_shit
+	cd ..
+}
+
 alias installgit69='cc2 git69 && sudo rm /usr/local/bin/git69 && sudo mv git69 /usr/local/bin/'
 alias vim='nvim $(fzf)'
 alias ls='eza'
