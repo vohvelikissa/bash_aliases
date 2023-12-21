@@ -1,15 +1,30 @@
-alias cls="clear"
-alias vim="nvim"
-alias buildnvim='git pull && sudo make CMAKE_BUILD_TYPE="RelWithDebInfo" && sudo make install'
-locatestringfromfiles ()
-{
-	grep -lr $1 .
+#aliases that are just aliases
+alias vim='nvim'
+alias firefox='brave-browser'
+alias whythefuckaminothearinganysoundplsfix='systemctl --user restart pulseaudio'
+alias cls='clear'
+alias snakegame='~/Games/textsnake_linux_amd64'
+alias speedtest='~/tools/speedtest' 
+alias waveterm='~/tools/Wave-linux-x64/Wave'
+
+#aliases that are actually functions
+createanewgitbranch() {
+	git branch $1
+	git checkout $1
+	echo "created branch $1\nswitched to it"
 }
-seejustspecificfiletype ()
-{
-	grep "."$1
+find2() {
+	find / | grep "$1" | less
 }
-getluaandvimfiles ()
-{
-	less $(locatestringfromfiles $1 | seejustspecificfiletype "lua" && locatestringfromfiles $1 | seejustspecificfiletype "vim")
+duckduckgo() {
+	w3m "https://www.duckduckgo.com/?q=$1"
 }
+github() {
+	gh repo view $1 | less
+}
+startgenericstudybrowsing() {
+	w3m "https://www.duckduckgo.com/?q=$1" "https://google.com/search/?q=$1" "https://www.djangoproject.com" "https://stackoverflow.com"
+}
+
+#aliases but for actual keys
+setxkbmap -option caps:swapescape
