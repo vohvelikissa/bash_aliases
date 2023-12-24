@@ -7,6 +7,12 @@ alias snakegame='~/Games/textsnake_linux_amd64'
 alias speedtest='~/tools/speedtest' 
 alias waveterm='~/tools/Wave-linux-x64/Wave'
 
+#aliases that are piping funny business
+alias maam='~/maam.sh'
+alias maam2='~/maamt.sh'
+alias maam25='find . > ~/vittumitapaskaa.txt'
+alias maam3='maam25 && maam2'
+
 #aliases that are actually functions
 createanewgitbranch() {
 	git branch $1
