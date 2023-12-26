@@ -12,6 +12,7 @@ alias maam='~/maam.sh'
 alias maam2='~/maamt.sh'
 alias maam25='find . > ~/vittumitapaskaa.txt'
 alias maam3='maam25 && maam2'
+alias w3mad='w3m $(cat changethisname.txt)'
 
 #aliases that are actually functions
 createanewgitbranch() {
@@ -25,12 +26,23 @@ find2() {
 duckduckgo() {
 	w3m "https://www.duckduckgo.com/?q=$1"
 }
+duckduckgo2() {
+	~/projects/linkhandlergatherer/a.out $1
+}
+duckduckgo3() {
+	mkdir $1
+	cd $1
+	duckduckgo2 $1
+	brave-browser ./*
+}
 github() {
 	gh repo view $1 | less
 }
 startgenericstudybrowsing() {
 	w3m "https://www.duckduckgo.com/?q=$1" "https://google.com/search/?q=$1" "https://www.djangoproject.com" "https://stackoverflow.com"
 }
-
+resultinglinks() {
+	duckduckgo $1 | grep "www." | vim
+}
 #aliases but for actual keys
 setxkbmap -option caps:swapescape
