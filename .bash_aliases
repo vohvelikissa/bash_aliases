@@ -44,5 +44,8 @@ startgenericstudybrowsing() {
 resultinglinks() {
 	duckduckgo $1 | grep "www." | vim
 }
+findexternals() {
+	grep "extern" $(find /usr/include/) | grep "$1" | less
+}
 #aliases but for actual keys
 setxkbmap -option caps:swapescape
