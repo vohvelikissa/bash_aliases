@@ -6,6 +6,8 @@ alias cls='clear'
 alias snakegame='~/Games/textsnake_linux_amd64'
 alias speedtest='~/tools/speedtest' 
 alias waveterm='~/tools/Wave-linux-x64/Wave'
+alias gcc2='gcc -Wall -Wextra -Werror'
+alias irssi2='irssi -c IRCnet -n Hilda'
 
 #aliases that are piping funny business
 alias maam='~/maam.sh'
