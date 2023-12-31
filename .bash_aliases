@@ -49,5 +49,8 @@ resultinglinks() {
 findexternals() {
 	grep "extern" $(find /usr/include/) | grep "$1" | less
 }
+overthewire() {
+	ssh bandit$1@bandit.labs.overthewire.org -p 2220
+}
 #aliases but for actual keys
 setxkbmap -option caps:swapescape
