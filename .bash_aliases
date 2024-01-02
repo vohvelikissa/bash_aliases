@@ -53,5 +53,8 @@ findexternals() {
 overthewire() {
 	ssh bandit$1@bandit.labs.overthewire.org -p 2220
 }
+tattach() {
+	tmux attach -t $1
+}
 #aliases but for actual keys
 setxkbmap -option caps:swapescape
