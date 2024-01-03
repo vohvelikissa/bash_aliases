@@ -74,5 +74,17 @@ readallthenews() {
 	aljazeera
 	hackernews
 }
+thinkaboutallthenews() {
+	mkdir ~/topicstobrowse
+	cd ~/topicstobrowse
+	mkdir $(date -I)
+	cd $(date -I)
+	readallthenews
+}
+combinethethonks() {
+	cd ~/topicstobrowse/
+	find ~/topicstobrowse/ | grep -E ".md$" > comb.md
+	less $(cat comb.md)
+}
 #aliases but for actual keys
 setxkbmap -option caps:swapescape
