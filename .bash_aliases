@@ -86,5 +86,10 @@ combinethethonks() {
 	find ~/topicstobrowse/ | grep -E ".md$" > comb.md
 	less $(cat comb.md)
 }
+thinkandcombineaboutnews() {
+	thinkaboutallthenews
+	combinethethonks
+	cat $(comb.md) | vim
+}
 #aliases but for actual keys
 setxkbmap -option caps:swapescape
