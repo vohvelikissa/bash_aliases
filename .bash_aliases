@@ -65,5 +65,13 @@ yleuutiset() {
 hackernews() {
 	sitetovim news.ycombinator.com/front "[(]"
 }
+aljazeera() {
+	sitetovim aljazeera.com "• [A-Z]"
+}
+readallthenews() {
+	yleuutiset
+	aljazeera
+	hackernews
+}
 #aliases but for actual keys
 setxkbmap -option caps:swapescape
