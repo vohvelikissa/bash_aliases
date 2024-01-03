@@ -58,7 +58,7 @@ tattach() {
 	tmux attach -t $1
 }
 hackernews2() {
-	w3m $(duckduckgo "$(hackernews | grep "(" | dmenu -l 30)" | grep "www." | echo $(dmenu -l 30) | tr -d ' ')
+	w3m $(duckduckgo "$(hackernews | grep "(" | dmenu -l 30)" | grep "www." | echo $(dmenu -l 30) | tr -d ' ') | vim
 }
 #aliases but for actual keys
 setxkbmap -option caps:swapescape
