@@ -91,9 +91,12 @@ thinkandcombineaboutnews() {
 	combinethethonks
 	cat $(comb.md) | vim
 }
+gitsywitsies() {
+	gh repo view $(gh search repos $1 | tail -n 30 | awk '{print $1;}' | dmenu -l 30) | less
+}
 additionalthonketsforgitsywitsies() {
 	combinethethonks
-	gh repo view $(gh search repos $1 | tail -n 30 | awk '{print $1;}' | dmenu -l 30) | less
+	gitsywitsies
 }
 #aliases but for actual keys
 setxkbmap -option caps:swapescape
