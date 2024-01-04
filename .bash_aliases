@@ -93,7 +93,7 @@ thinkandcombineaboutnews() {
 }
 additionalthonketsforgitsywitsies() {
 	combinethethonks
-	gh repo view $(gh search repos uutiset | tail -n 30 | awk '{print $1;}' | dmenu -l 30) | less
+	gh repo view $(gh search repos $1 | tail -n 30 | awk '{print $1;}' | dmenu -l 30) | less
 }
 #aliases but for actual keys
 setxkbmap -option caps:swapescape
