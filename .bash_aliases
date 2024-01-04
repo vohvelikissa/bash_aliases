@@ -10,7 +10,7 @@ alias gcc2='gcc -Wall -Wextra -Werror'
 alias irssi2='irssi -c IRCnet -n Hilda'
 alias irssi3='irssi -c ircs.overthewire.org -n Hilda'
 alias alias2='alias && grep ") {" ~/projects/bash_aliases/.bash_aliases'
-alias apt2='nala'
+alias apt2='sudo nala'
 
 #aliases that are piping funny business
 alias maam='~/maam.sh'
