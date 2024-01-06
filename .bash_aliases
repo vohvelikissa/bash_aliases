@@ -11,6 +11,7 @@ alias irssi2='irssi -c IRCnet -n Hilda'
 alias irssi3='irssi -c ircs.overthewire.org -n Hilda'
 alias alias2='alias && grep ") {" ~/projects/bash_aliases/.bash_aliases'
 alias apt2='sudo nala'
+alias dumbshitcommandexecutor='~/projects/simpleloadingscreen/a.out'
 
 #aliases that are piping funny business
 alias maam='~/maam.sh'
@@ -98,6 +99,14 @@ gitsywitsies() {
 additionalthonketsforgitsywitsies() {
 	combinethethonks
 	gitsywitsies
+}
+plsupdatemyneovim() {
+	cd ~/tools/neovim
+	git fetch
+	git pull
+	sudo make CMAKE_BUILD_TYPE=RelWithDebInfo
+	sudo make install
+	cd -
 }
 #aliases but for actual keys
 setxkbmap -option caps:swapescape
