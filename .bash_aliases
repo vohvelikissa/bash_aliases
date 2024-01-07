@@ -1,5 +1,5 @@
 #aliases that are just aliases
-alias vim="nvim $1 && rm duckduckgosearch.txt"
+alias vim="nvim"
 alias firefox='brave-browser'
 alias whythefuckaminothearinganysoundplsfix='systemctl --user restart pulseaudio'
 alias cls='clear'
