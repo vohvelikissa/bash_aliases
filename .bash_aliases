@@ -1,5 +1,5 @@
 #aliases that are just aliases
-alias vim='nvim'
+alias vim="nvim $1 && rm duckduckgosearch.txt"
 alias firefox='brave-browser'
 alias whythefuckaminothearinganysoundplsfix='systemctl --user restart pulseaudio'
 alias cls='clear'
@@ -107,6 +107,11 @@ plsupdatemyneovim() {
 	sudo make CMAKE_BUILD_TYPE=RelWithDebInfo
 	sudo make install
 	cd -
+}
+git68() {
+	git add .
+	git commit -m "$1"
+	git push
 }
 #aliases but for actual keys
 setxkbmap -option caps:swapescape
