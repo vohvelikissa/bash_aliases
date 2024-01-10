@@ -85,3 +85,4 @@ git68() {
 . ~/projects/newiebewies/.bash_aliases
 #aliases but for actual keys
 setxkbmap -option caps:swapescape
+alias helpless='help | less'
