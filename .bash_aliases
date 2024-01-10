@@ -86,3 +86,4 @@ git68() {
 #aliases but for actual keys
 setxkbmap -option caps:swapescape
 alias helpless='help | less'
+#meitä kuolevaisia on vain kahdenlaisia, jokainen ihminen on joko minä tai yksi muista.
