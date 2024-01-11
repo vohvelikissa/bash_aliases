@@ -12,6 +12,7 @@ alias irssi3='irssi -c ircs.overthewire.org -n Hilda'
 alias alias2='alias && grep ") {" ~/projects/bash_aliases/.bash_aliases'
 alias apt2='sudo nala'
 alias dumbshitcommandexecutor='~/projects/simpleloadingscreen/a.out'
+alias excel='~/tools/vizigo/vizigo'
 
 #aliases that are piping funny business
 alias maam='~/maam.sh'
