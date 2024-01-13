@@ -75,7 +75,7 @@ plsupdatemyneovim() {
 	git pull
 	sudo make CMAKE_BUILD_TYPE=RelWithDebInfo
 	sudo make install
-	cd -
+	cd - >> fromwherehaveiupdatednvim
 }
 git68() {
 	git add .
@@ -90,3 +90,4 @@ git68() {
 setxkbmap -option caps:swapescape
 alias helpless='help | less'
 #meitä kuolevaisia on vain kahdenlaisia, jokainen ihminen on joko minä tai yksi muista.
+shutdown 21:00
