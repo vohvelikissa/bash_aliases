@@ -83,6 +83,8 @@ git68() {
 	git commit -m "$1"
 	git push
 }
+#everyman
+. ~/projects/everyman/.bash_aliases
 #webnorris
 . ~/projects/webnorris/.bash_aliases
 #newiebewies
