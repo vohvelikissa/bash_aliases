@@ -16,6 +16,7 @@ alias excel='~/tools/vizigo/vizigo'
 alias hackypomodoro='timeout 45m man timeout; alert "get up you fatass"; timeout 15m man timeout; alert "get back to work"'
 alias infipomodoro='while true; do hackypomodoro;done;'
 alias findprojects='cd $(find . | grep ".git$" | dmenu -l 30); cd ..'
+alias c='cd;cls'
 
 #aliases that are piping funny business
 alias maam='~/maam.sh'
@@ -93,4 +94,4 @@ git68() {
 setxkbmap -option caps:swapescape
 alias helpless='help | less'
 #meitä kuolevaisia on vain kahdenlaisia, jokainen ihminen on joko minä tai yksi muista.
-shutdown 21:00
+#shutdown 21:00
