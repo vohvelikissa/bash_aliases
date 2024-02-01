@@ -17,6 +17,7 @@ alias hackypomodoro='timeout 45m man timeout; alert "get up you fatass"; timeout
 alias infipomodoro='while true; do hackypomodoro;done;'
 alias findprojects='cd $(find . | grep ".git$" | dmenu -l 30); cd ..'
 alias c='cd;cls'
+alias e='exit'
 
 #aliases that are piping funny business
 alias maam='~/maam.sh'
