@@ -96,3 +96,5 @@ setxkbmap -option caps:swapescape
 alias helpless='help | less'
 #meitä kuolevaisia on vain kahdenlaisia, jokainen ihminen on joko minä tai yksi muista.
 #shutdown 21:00
+
+synclient TouchpadOff=1
