@@ -91,6 +91,8 @@ git68() {
 . ~/projects/webnorris/.bash_aliases
 #newiebewies
 . ~/projects/newiebewies/.bash_aliases
+#carprogramming
+. ~/projects/carprogramming/.bash_aliases
 #aliases but for actual keys
 setxkbmap -option caps:swapescape
 alias helpless='help | less'
