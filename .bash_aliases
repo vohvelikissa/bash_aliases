@@ -99,4 +99,23 @@ alias helpless='help | less'
 #meitä kuolevaisia on vain kahdenlaisia, jokainen ihminen on joko minä tai yksi muista.
 #shutdown 21:00
 
+fourmux() {
+	xdotool key ctrl+b+quotedbl
+	xdotool key ctrl+b+percent
+	xdotool key ctrl+b
+	xdotool key Up
+	xdotool key ctrl+b+percent
+	xdotool key ctrl+b
+	xdotool key Left
+	cls
+}
+
+stackedfourmux() {
+	fourmux
+	fourmux
+	fourmux
+	fourmux
+	fourmux
+}
+
 synclient TouchpadOff=1
