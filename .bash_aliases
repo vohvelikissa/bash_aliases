@@ -20,6 +20,7 @@ alias c='cd;cls'
 alias e='exit'
 alias aliasless='alias3 | less'
 alias clstmux='tmux; c'
+alias tmux='clstmux'
 
 #aliases that are piping funny business
 alias maam='~/maam.sh'
@@ -34,46 +35,59 @@ createanewgitbranch() {
 	git checkout $1
 	echo "created branch $1\nswitched to it"
 }
+
 find2() {
 	find / | grep "$1" | less
 }
+
 duckduckgo() {
 	w3m "https://www.duckduckgo.com/?q=$1"
 }
+
 duckduckgo2() {
 	~/projects/linkhandlergatherer/a.out $1
 }
+
 duckduckgo3() {
 	mkdir $1
 	cd $1
 	duckduckgo2 $1
 	brave-browser ./*
 }
+
 github() {
 	gh repo view $1 | less
 }
+
 startgenericstudybrowsing() {
 	w3m "https://www.duckduckgo.com/?q=$1" "https://google.com/search/?q=$1" "https://www.djangoproject.com" "https://stackoverflow.com"
 }
+
 resultinglinks() {
 	duckduckgo $1 | grep "www." | vim
 }
+
 findexternals() {
 	grep "extern" $(find /usr/include/) | grep "$1" | less
 }
+
 overthewire() {
 	ssh bandit$1@bandit.labs.overthewire.org -p 2220
 }
+
 tattach() {
 	tmux attach -t $1
 }
+
 gitsywitsies() {
 	gh repo view $(gh search repos $1 | tail -n 30 | awk '{print $1;}' | dmenu -l 30) | less
 }
+
 additionalthonketsforgitsywitsies() {
 	combinethethonks
 	gitsywitsies
 }
+
 plsupdatemyneovim() {
 	cd ~/tools/neovim
 	git fetch
@@ -82,22 +96,30 @@ plsupdatemyneovim() {
 	sudo make install
 	cd - >> fromwherehaveiupdatednvim
 }
+
 git68() {
 	git add .
 	git commit -m "$1"
 	git push
 }
+
 #everyman
 . ~/projects/everyman/.bash_aliases
+
 #webnorris
 . ~/projects/webnorris/.bash_aliases
+
 #newiebewies
 . ~/projects/newiebewies/.bash_aliases
+
 #carprogramming
 . ~/projects/carprogramming/.bash_aliases
+
 #aliases but for actual keys
 setxkbmap -option caps:swapescape
+
 alias helpless='help | less'
+
 #meitä kuolevaisia on vain kahdenlaisia, jokainen ihminen on joko minä tai yksi muista.
 #shutdown 21:00
 
