@@ -18,6 +18,7 @@ alias infipomodoro='while true; do hackypomodoro;done;'
 alias findprojects='cd $(find . | grep ".git$" | dmenu -l 30); cd ..'
 alias c='cd;cls'
 alias e='exit'
+alias aliasless='alias3 | less'
 
 #aliases that are piping funny business
 alias maam='~/maam.sh'
@@ -137,6 +138,11 @@ workfourmux() {
 
 lsrfg() {
 	ls -Rfg ./$1 | less
+}
+
+alias3() {
+	alias
+	grep ") {" $(find ~/projects | grep ".bash_aliases$")
 }
 
 synclient TouchpadOff=1
