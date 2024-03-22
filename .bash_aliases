@@ -19,6 +19,7 @@ alias findprojects='cd $(find . | grep ".git$" | dmenu -l 30); cd ..'
 alias c='cd;cls'
 alias e='exit'
 alias aliasless='alias3 | less'
+alias clstmux='tmux; c'
 
 #aliases that are piping funny business
 alias maam='~/maam.sh'
