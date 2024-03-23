@@ -30,6 +30,10 @@ alias maam3='maam25 && maam2'
 alias w3mad='w3m $(cat changethisname.txt)'
 
 #aliases that are actually functions
+lessless() {
+	ls $1 | less
+}
+
 createanewgitbranch() {
 	git branch $1
 	git checkout $1
