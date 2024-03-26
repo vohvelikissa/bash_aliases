@@ -22,6 +22,7 @@ alias e='exit'
 alias aliasless='alias3 | less'
 alias clstmux='tmux; c'
 alias tmux='clstmux'
+alias batbelt='aliasless | bat'
 locatemycoverletters () {
 	brave-browser $(find ~ | grep ".pdf$" | grep "cover" | grep "$1" | fzf)
 }
