@@ -1,4 +1,5 @@
 #aliases that are just aliases
+alias vi='vim'
 alias vim="nvim"
 alias firefox='brave-browser'
 alias whythefuckaminothearinganysoundplsfix='systemctl --user restart pulseaudio'
