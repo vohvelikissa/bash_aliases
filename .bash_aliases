@@ -22,7 +22,9 @@ alias e='exit'
 alias aliasless='alias3 | less'
 alias clstmux='tmux; c'
 alias tmux='clstmux'
-alias locatemycoverletters='brave-browser $(find ~ | grep ".pdf$" | grep "cover" | fzf)'
+locatemycoverletters () {
+	brave-browser $(find ~ | grep ".pdf$" | grep "cover" | grep "$1" | fzf)
+}
 
 #aliases that are piping funny business
 alias maam='~/maam.sh'
