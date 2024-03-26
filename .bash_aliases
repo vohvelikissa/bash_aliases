@@ -23,11 +23,7 @@ alias aliasless='alias3 | less'
 alias clstmux='tmux; c'
 alias tmux='clstmux'
 alias batbelt='aliasless | bat'
-locatemycoverletters () {
-	brave-browser $(find ~ | grep ".pdf$" | grep "cover" | grep "$1" | fzf)
-}
-
-#aliases that are piping funny business
+alias helpless='help | less'
 alias maam='~/maam.sh'
 alias maam2='~/maamt.sh'
 alias maam25='find . > ~/vittumitapaskaa.txt'
@@ -35,6 +31,10 @@ alias maam3='maam25 && maam2'
 alias w3mad='w3m $(cat changethisname.txt)'
 
 #aliases that are actually functions
+locatemycoverletters () {
+	brave-browser $(find ~ | grep ".pdf$" | grep "cover" | grep "$1" | fzf)
+}
+
 lessless() {
 	ls $1 | less
 }
@@ -112,6 +112,15 @@ git68() {
 	git push
 }
 
+lsrfg() {
+	ls -Rfg ./$1 | less
+}
+
+alias3() {
+	alias
+	grep ") {" $(find ~/projects | grep ".bash_aliases$")
+}
+
 #everyman
 . ~/projects/everyman/.bash_aliases
 
@@ -124,57 +133,9 @@ git68() {
 #carprogramming
 . ~/projects/carprogramming/.bash_aliases
 
+#fourmuxiwuxies
+. ~/projects/fourmuxiwuxies/.bash_aliases
+
 #aliases but for actual keys
 setxkbmap -option caps:swapescape
-
-alias helpless='help | less'
-
-#meitä kuolevaisia on vain kahdenlaisia, jokainen ihminen on joko minä tai yksi muista.
-#shutdown 21:00
-
-fourmux() {
-	xdotool key --delay 0 ctrl+b+quotedbl
-	xdotool key --delay 0 ctrl+b+percent
-	xdotool key --delay 0 ctrl+b
-	xdotool key --delay 0 Up
-	xdotool key --delay 0 ctrl+b+percent
-	xdotool key --delay 0 ctrl+b
-	xdotool key --delay 0 Left
-	cls
-}
-
-stackedfourmux() {
-	fourmux
-	fourmux
-	fourmux
-	fourmux
-	fourmux
-}
-
-aroundthefourmuxes() {
-	vim . &
-	xdotool key --delay 0 ctrl+b Down
-	xdotool type --delay 0 $1
-	xdotool key --delay 0 ctrl+b Right
-	xdotool type --delay 0 $2 
-	xdotool key --delay 0 ctrl+b Up
-	xdotool type --delay 0 $3
-	xdotool key --delay 0 ctrl+b Left
-}
-
-workfourmux() {
-	fourmux
-	aroundthefourmuxes $1 $2 $3
-	fg
-}
-
-lsrfg() {
-	ls -Rfg ./$1 | less
-}
-
-alias3() {
-	alias
-	grep ") {" $(find ~/projects | grep ".bash_aliases$")
-}
-
 synclient TouchpadOff=1
