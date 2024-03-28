@@ -3,6 +3,7 @@ installmyaliasespls() {
 	perkele=$(pwd)
 	cd
 	mkdir -p projects/bashshit
+	echo ". ~/projects/bash_aliases/.bash_aliases" >> .bash_aliases
 	cd projects/bashshit
 	git clone git@github.com:vohvelikissa/everyman
 	git clone git@github.com:vohvelikissa/webnorris
