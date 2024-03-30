@@ -7,19 +7,10 @@ installmyaliasespls() {
 	cd projects/bashshit
 	git clone git@github.com:vohvelikissa/gitsywitsies
 	. ~/projects/bashshit/gitsywitsies/.bash_aliases
-	clone vohvelikissa/everyman
-	clone vohvelikissa/webnorris
-	clone vohvelikissa/newiebewies
-	clone vohvelikissa/carprogramming
-	clone vohvelikissa/fourmuxiwuxies
-	clone vohvelikissa/aliasbusiness
-	clone vohvelikissa/maam
-	clone vohvelikissa/duckduckgo
-	clone vohvelikissa/findstuff
-	clone vohvelikissa/keyremaps
-	clone vohvelikissa/neovimbashiewashies
-	clone vohvelikissa/miscywhiskies
-	clone vohvelikissa/aliasdirs
+	for repository in $(cat ~/projects/bash_aliases/repositories.txt)
+	do
+		clone $repository
+	done
 	. ~/projects/bashshit/aliasdirs/.bash_aliases
 	cd $perkele
 }
