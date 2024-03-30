@@ -11,6 +11,8 @@ installmyaliasespls() {
 	do
 		clone $repository
 	done
+	cd ..
+	clone vohvelikissa/discordupdater
 	. ~/projects/bashshit/aliasdirs/.bash_aliases
 	cd $perkele
 }
