@@ -14,3 +14,4 @@ installmyaliasespls() {
 	. ~/projects/bashshit/aliasdirs/.bash_aliases
 	cd $perkele
 }
+set -o vi
