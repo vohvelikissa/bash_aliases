@@ -12,3 +12,4 @@ vohvelikissa/neovimbashiewashies
 vohvelikissa/miscywhiskies
 vohvelikissa/aliasdirs
 vohvelikissa/discordupdater
+vohvelikissa/intellijupdater
