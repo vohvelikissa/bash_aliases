@@ -14,3 +14,4 @@ vohvelikissa/aliasdirs
 vohvelikissa/discordupdater
 vohvelikissa/intellijupdater
 vohvelikissa/updatealloftheabove
+vohvelikissa/torupdater
