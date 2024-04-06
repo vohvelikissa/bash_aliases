@@ -15,3 +15,4 @@ vohvelikissa/discordupdater
 vohvelikissa/intellijupdater
 vohvelikissa/updatealloftheabove
 vohvelikissa/torupdater
+vohvelikissa/godotupdater
