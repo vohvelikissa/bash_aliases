@@ -12,7 +12,9 @@ installmyaliasespls() {
 		clone $repository
 	done
 	. ~/projects/bashshit/aliasdirs/.bash_aliases
+	sudo apt install xdotool
 	cd $perkele
 }
 set -o vi
 xinput set-prop 12 "Device Enabled" 0
+xdotool mousemove 1500 1
