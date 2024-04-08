@@ -15,3 +15,4 @@ installmyaliasespls() {
 	cd $perkele
 }
 set -o vi
+xinput set-prop 12 "Device Enabled" 0
