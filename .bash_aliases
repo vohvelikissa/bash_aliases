@@ -15,6 +15,9 @@ installmyaliasespls() {
 	sudo apt install xdotool
 	cd $perkele
 }
+openaterminalasilikeit() {
+	xfce4-terminal --hide-menubar --hide-borders --hide-scrollbar
+}
 set -o vi
 xinput set-prop 12 "Device Enabled" 0
 xdotool mousemove 1500 1
