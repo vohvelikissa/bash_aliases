@@ -18,3 +18,4 @@ vohvelikissa/torupdater
 vohvelikissa/godotupdater
 vohvelikissa/mouseactivities
 vohvelikissa/doesmyinternetwork
+vohvelikissa/eurovisionshit
