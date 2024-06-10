@@ -19,3 +19,4 @@ vohvelikissa/godotupdater
 vohvelikissa/mouseactivities
 vohvelikissa/doesmyinternetwork
 vohvelikissa/eurovisionshit
+vohvelikissa/randompride
