@@ -19,3 +19,4 @@ vohvelikissa/mouseactivities
 vohvelikissa/doesmyinternetwork
 vohvelikissa/eurovisionshit
 vohvelikissa/randompride
+vohvelikissa/chtfind
